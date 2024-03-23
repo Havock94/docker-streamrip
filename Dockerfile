@@ -5,8 +5,8 @@ FROM python:alpine
 WORKDIR /streamrip
 
 # Aggiorna i pacchetti e installa ffmpeg, necessario per alcune funzionalità di streamrip
-RUN apt-get update && \
-    apt-get install -y ffmpeg && \
+RUN apk update && apk add
+RUN apk add ffmpeg && \
     rm -rf /var/lib/apt/lists/*
 
 # Installa streamrip
