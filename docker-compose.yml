@@ -1,0 +1,9 @@
+version: '3'
+services:
+  streamrip:
+    build:
+      context: https://github.com/Havock94/docker-streamrip.git#main
+      dockerfile: Dockerfile
+#    volumes:
+#      - /Users/luca.denardi/Downloads/My Files/docker/streamrip/config/config.toml:/tmp/config.toml
+#      - /Users/luca.denardi/Downloads/My Files/docker/streamrip/download:/tmp/download
